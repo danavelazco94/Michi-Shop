@@ -33,10 +33,7 @@ button {
   margin: 0 auto;
 }
 
-/* ===============================
-   HEADER
-================================ */
-
+/* HEADER */
 .header {
   min-height: 700px;
   position: relative;
@@ -92,10 +89,7 @@ button {
   display: none;
 }
 
-/* ===============================
-   CARRITO
-================================ */
-
+   /* CARRITO */
 .submenu {
   position: relative;
 }
@@ -236,10 +230,7 @@ td img {
   margin-top: 20px;
 }
 
-/* ===============================
-   HEADER CONTENT
-================================ */
-
+   /* HEADER CONTENT */
 .header-content {
   position: relative;
 
@@ -338,10 +329,7 @@ td img {
   color: white;
 }
 
-/* ===============================
-   SECCIONES
-================================ */
-
+   /* SECCIONES */
 .regalos {
   display: flex;
 
@@ -382,10 +370,7 @@ td img {
   color: rgb(32, 7, 56);
 }
 
-/* ===============================
-   PRODUCTOS
-================================ */
-
+   /* PRODUCTOS */
 .productos {
   padding: 50px 0;
 }
@@ -464,10 +449,7 @@ td img {
   margin-top: 10px;
 }
 
-/* ===============================
-   CHECKOUT
-================================ */
-
+   /* CHECKOUT */
 .checkout {
     display: none;
     
@@ -565,10 +547,7 @@ td img {
   border-radius: 10px;
 }
 
-/* ===============================
-   MENSAJES
-================================ */
-
+   /* MENSAJES */
 .mensaje-carrito {
   position: fixed;
 
@@ -612,10 +591,7 @@ td img {
   color: rgb(69, 0, 133);
 }
 
-/* ===============================
-   FOOTER
-================================ */
-
+   /* FOOTER */
 .footer {
   padding: 50px 0 30px;
 }
@@ -679,10 +655,7 @@ td img {
   font-size: 13px;
 }
 
-/* ===============================
-   RESPONSIVE
-================================ */
-
+   /* RESPONSIVE */
 @media (max-width: 768px) {
   .container {
     width: 90%;

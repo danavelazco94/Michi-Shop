@@ -367,6 +367,7 @@ function cerrarFormulario() {
 
   mensajeCompra.innerHTML = "";
 }
+
 // FINALIZAR COMPRA
 function finalizarCompra(e) {
   e.preventDefault();
