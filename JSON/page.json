@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "nombre": "Rascador de tres niveles",
+    "precio": 200000,
+    "imagen": "./images/productos/rascador.png",
+    "categoria": "Rascadores"
+  },
+  {
+    "id": 2,
+    "nombre": "Silla rascadora",
+    "precio": 60000,
+    "imagen": "./images/productos/silla-rascadora.png",
+    "categoria": "Rascadores"
+  },
+  {
+    "id": 3,
+    "nombre": "Pelota eléctrica",
+    "precio": 8000,
+    "imagen": "./images/productos/pelota-electrica.png",
+    "categoria": "Juguetes"
+  },
+  {
+    "id": 4,
+    "nombre": "Varilla con decoración",
+    "precio": 4000,
+    "imagen": "./images/productos/varilla.png",
+    "categoria": "Juguetes"
+  },
+  {
+    "id": 5,
+    "nombre": "Cama colgante",
+    "precio": 80000,
+    "imagen": "./images/productos/cama-colgante.png",
+    "categoria": "Descanso"
+  },
+  {
+    "id": 6,
+    "nombre": "Arenero",
+    "precio": 30000,
+    "imagen": "./images/productos/arenero.png",
+    "categoria": "Accesorios"
+  },
+  {
+    "id": 7,
+    "nombre": "Peine a vapor",
+    "precio": 10000,
+    "imagen": "./images/productos/peine.png",
+    "categoria": "Higiene"
+  },
+  {
+    "id": 8,
+    "nombre": "Transportadora",
+    "precio": 65000,
+    "imagen": "./images/productos/transportadora.png",
+    "categoria": "Accesorios"
+  }
+]
