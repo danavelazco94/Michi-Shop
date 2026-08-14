@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./styles/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+
+    <title>Michi-Shop | Tienda para gatitos</title>
+
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script defer src="./JS/main.js"></script>
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="menu container">
+        <a href="#" class="logo">Michi 🐱</a>
+
+        <input type="checkbox" id="menu" />
+
+        <label for="menu">
+          <img
+            src="./images/menu.png"
+            class="menu-icono"
+            alt="Abrir menú"
+          />
+        </label>
+
+        <nav class="navbar">
+          <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#productos">Productos</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+          </ul>
+        </nav>
+
+        <!-- CARRITO -->
+        <div>
+          <ul>
+            <li class="submenu">
+              <button id="btn-carrito" class="carrito-btn">
+                <img
+                  src="./images/carrito.png"
+                  id="img-carrito"
+                  alt="Abrir carrito de compras"
+                />
+                <span id="contador-carrito">0</span>
+              </button>
+
+              <div id="carrito">
+                <h3>Tu carrito 🛒</h3>
+
+                <table id="lista-carrito">
+                  <thead>
+                    <tr>
+                      <th>Producto</th>
+                      <th>Precio</th>
+                      <th>Cantidad</th>
+                      <th>Subtotal</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+
+                  <tbody></tbody>
+                </table>
+
+                <div class="carrito-total">
+                  <strong>Total:</strong>
+                  <span id="total-carrito">$0</span>
+                </div>
+
+                <div class="carrito-botones">
+                  <button id="vaciar-carrito" class="btn-2">
+                    Vaciar carrito
+                  </button>
+
+                  <button id="finalizar-compra" class="btn-3">
+                    Finalizar compra
+                  </button>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- INICIO -->
+      <div class="header-content container" id="inicio">
+        <h1>Michi-Shop</h1>
+
+        <p>
+          Todo lo mejor, solo para los mejores.
+          Encontrá todo lo que tu michi necesita para ser feliz.
+        </p>
+
+        <div class="btns">
+          <a href="#productos" class="btn-1">Ver productos</a>
+          <a href="#nosotros" class="btn-1">Conocenos</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- PRESENTACIÓN -->
+      <section class="regalos container">
+        <div class="regalos-1">
+          <h2>Hay muchas maneras de hacer feliz a tu mejor amigo</h2>
+          <hr />
+          <p>Productos para michis</p>
+        </div>
+
+        <div class="regalos-2">
+          <h2>
+            Muchos productos
+            <br />
+            para elegir
+          </h2>
+        </div>
+      </section>
+
+      <!-- PRODUCTOS -->
+      <section class="productos container" id="productos">
+        <div class="titulo-seccion">
+          <h2>Productos para tu michi 🐾</h2>
+          <p>Elegí tus favoritos y agregalos al carrito.</p>
+        </div>
+
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper" id="productos-container">
+            <!-- Los productos se cargan desde productos.json -->
+          </div>
+
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+      <!-- NOSOTROS -->
+      <section class="regalos container" id="nosotros">
+        <div class="regalos-1">
+          <h2>Sobre Michi-Shop</h2>
+          <hr />
+
+          <p>
+            Creamos Michi-Shop pensando en quienes quieren darle a sus gatos
+            productos de calidad para jugar, descansar y disfrutar.
+          </p>
+        </div>
+
+        <div class="regalos-2">
+          <h2>
+            Michis
+            <br />
+            más felices 🐱
+          </h2>
+        </div>
+      </section>
+
+      <!-- CHECKOUT -->
+      <section id="checkout" class="checkout container">
+        <div class="checkout-contenido">
+          <button id="cerrar-checkout" class="cerrar-checkout">
+            ✕
+          </button>
+
+          <h2>Finalizar compra 🛒</h2>
+
+          <p>
+            Completá tus datos para confirmar el pedido.
+          </p>
+
+          <form id="formulario-compra">
+            <div class="campo">
+              <label for="nombre">Nombre</label>
+              <input
+                type="text"
+                id="nombre"
+                required
+                placeholder="Tu nombre"
+              />
+            </div>
+
+            <div class="campo">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                required
+                placeholder="tuemail@gmail.com"
+              />
+            </div>
+
+            <div class="campo">
+              <label for="direccion">Dirección</label>
+              <input
+                type="text"
+                id="direccion"
+                required
+                placeholder="Tu dirección"
+              />
+            </div>
+
+            <div class="campo">
+              <label for="metodo-pago">Método de pago</label>
+
+              <select id="metodo-pago" required>
+                <option value="">Seleccionar</option>
+                <option value="Tarjeta de crédito">
+                  Tarjeta de crédito
+                </option>
+                <option value="Tarjeta de débito">
+                  Tarjeta de débito
+                </option>
+                <option value="Transferencia">
+                  Transferencia
+                </option>
+              </select>
+            </div>
+
+            <div class="resumen-compra">
+              <strong>Total de la compra:</strong>
+              <span id="total-checkout">$0</span>
+            </div>
+
+            <button type="submit" class="btn-1">
+              Confirmar compra
+            </button>
+          </form>
+
+          <div id="mensaje-compra" class="mensaje-compra"></div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer container">
+      <h3 class="f-h3">Michi-Shop 🐱</h3>
+
+      <hr />
+
+      <div class="links">
+        <div class="link">
+          <h3>Sobre nosotros</h3>
+
+          <p>
+            Todo lo que tu michi necesita para jugar, descansar y disfrutar.
+          </p>
+        </div>
+
+        <div class="link">
+          <h3>Información</h3>
+
+          <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#productos">Productos</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+          </ul>
+        </div>
+
+        <div class="link">
+          <h3>Seguinos</h3>
+
+          <div class="redes">
+            <ul>
+              <li>
+                <a href="https://www.facebook.com" target="_blank">
+                  <img
+                    src="./images/redes/facebook.png"
+                    alt="Facebook"
+                  />
+                </a>
+              </li>
+
+              <li>
+                <a href="https://www.instagram.com" target="_blank">
+                  <img
+                    src="./images/redes/instagram.png"
+                    alt="Instagram"
+                  />
+                </a>
+              </li>
+
+              <li>
+                <a href="https://web.whatsapp.com/" target="_blank">
+                  <img
+                    src="./images/redes/whatsapp.png"
+                    alt="WhatsApp"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <p class="copyright">
+        © 2026 Michi-Shop. Todos los derechos reservados.
+      </p>
+    </footer>
+  </body>
+</html>
